@@ -12,11 +12,14 @@ body {
       margin-right: 30px;
       margin-top: 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-      transition: transform 0.5s ease;
+      transition: transform 0.4s, box-shadow 0.4s;
+      will-change: transform, box-shadow;
      
     }
     .container .first img:hover {
-        transform: scale(1.05);
+        transform: scale(1.10);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+        z-index: 2;
         
     }
     .first h1,p,h2{
@@ -34,11 +37,15 @@ body {
         border-radius: 10px;
         margin-right: 50px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-         transition: transform 0.5s ease;
+        transition: transform 0.4s cubic-bezier(.77,0,.18,1), box-shadow 0.4s cubic-bezier(.77,0,.18,1);
+        will-change: transform, box-shadow;
         
     }
      .container .second img:hover {
-        transform: scale(1.05);
+       transform: scale(1.10);
+       box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+        z-index: 2 ;
+    
      
      }
 
@@ -46,10 +53,13 @@ body {
     .para{
         
         background-color: rgba(230, 232, 234, 0.5);
-         transition: transform 0.5s ease;
+         transition: transform 0.4s cubic-bezier(.77,0,.18,1), box-shadow 0.4s cubic-bezier(.77,0,.18,1);
+         will-change: transform, box-shadow;
     }
     .para:hover{
-        transform: scale(1.03);
+        transform: scale(1.10);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+        z-index: 2;
     }
     hr{
         background-color: black;
@@ -73,11 +83,14 @@ body {
     font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 10px;
-    transition: transform 0.5s ease;
+    transition: transform 0.4s cubic-bezier(.77,0,.18,1), box-shadow 0.4s cubic-bezier(.77,0,.18,1);
+    will-change: transform, box-shadow;
 }
 
 .quote:hover {
-    transform: scale(1.03);
+    transform: scale(1.10);
+    box-shadow: 0 8px 24px rgba(75, 46, 131, 0.18);
+    z-index: 2;
 }
 
 
